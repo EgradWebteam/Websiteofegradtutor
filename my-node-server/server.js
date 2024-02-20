@@ -1,8 +1,10 @@
 const express = require('express');
 const path = require('path');
 // const mysql = require('mysql');
-const app = express();
+const app = express(),
+     bodyParser = require("body-parser");
 const cors = require('cors');
+app.use(bodyParser.json());
 // require('dotenv').config();
 
 app.use(cors());
