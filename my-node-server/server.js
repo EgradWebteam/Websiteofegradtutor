@@ -3,13 +3,16 @@ const path = require('path');
 // const mysql = require('mysql');
 const app = express();
 const cors = require('cors');
+require('dotenv').config();
+
 app.use(cors());
+
 // const db = mysql.createConnection({
-//   host: 'your-mysql-server-host',
-//   user: 'your-mysql-username',
-//   password: 'your-mysql-password',
-//   database: 'your-database-name'
-// });
+//     host: process.env.DB_HOST,
+//     user: process.env.DB_USER,
+//     password: process.env.DB_PASSWORD,
+//     database: process.env.DB_DATABASE
+//   });
 
 // ... (database connection code)
 

@@ -3,17 +3,19 @@ import axios from 'axios';
 
 function App() {
   const [data, setData] = useState(null);
+  const apiUrl = process.env.REACT_APP_API_URL;
 
   useEffect(() => {
-    axios.get('http://localhost:5000/api/data')  // Corrected URL
+    console.log('apiUrl:', apiUrl);
+    axios.get(`${apiUrl}/api/data`)  // Use template literals to interpolate apiUrl
       .then(response => {
         setData(response.data);
       })
       .catch(error => {
         console.error('Error fetching data:', error);
       });
-  }, []);
-  
+  }, [apiUrl]);  // Add apiUrl as a dependency to useEffect to avoid eslint warnings
+
   return (
     <div>
       <h1>Your React App</h1>
