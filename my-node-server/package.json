@@ -5,9 +5,17 @@
   "scripts": {
     "start": "nodemon server.js"
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EgradWebteam/Websiteofegradtutor"
+  },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EgradWebteam/Websiteofegradtutor/issues"
+  },
+  "homepage": "https://github.com/EgradWebteam/Websiteofegradtutor#readme",
+  "keywords": [],
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
