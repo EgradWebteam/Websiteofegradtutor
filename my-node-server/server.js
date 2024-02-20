@@ -3,7 +3,7 @@ const path = require('path');
 // const mysql = require('mysql');
 const app = express();
 const cors = require('cors');
-require('dotenv').config();
+// require('dotenv').config();
 
 app.use(cors());
 
