@@ -3,11 +3,11 @@ const path = require('path');
 // const mysql = require('mysql');
 const app = express(),
      bodyParser = require("body-parser");
-// const cors = require('cors');
+const cors = require('cors');
 app.use(bodyParser.json());
 // require('dotenv').config();
 
-// app.use(cors());
+app.use(cors());
 
 // const db = mysql.createConnection({
 //     host: process.env.DB_HOST,
